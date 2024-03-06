@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&CSS | Working Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-left">
+            <div class="contact-left-titre">
+                <h2>Send message </h2>
+                <hr>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="e291a3dc-7085-48af-9e23-50fba1c98a63">
+                <label for="firstname">First name</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Your first name here " class="contact-inputs" required>
+                
+                <label for="familyname">Family name</label>
+                <input type="text" name="familyname" id="familyname" placeholder="Your family name here" class="contact-inputs" required>
+                
+                <label for="email">Email Adresse</label>
+                <input type="email" name="Email" id="email" placeholder="Your Email adresse here" class="contact-inputs" required>
+                
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Your message here" class="contact-inputs" required></textarea>
+                
+                <button type="submit">Send <img src="images/arrow.png"></button>
+            </form>
+        </div>
+        
+        <div class="contact-right">
+            <img src="images/contact.png">
+        </div>
+    </div>
+</body>
+</html>
